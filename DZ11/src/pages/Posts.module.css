@@ -1,0 +1,58 @@
+.card {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 18px;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  margin: 0 0 12px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.item {
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fafafa;
+}
+
+.itemHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.postTitle {
+  margin: 0;
+  font-size: 16px;
+}
+
+.excerpt {
+  margin: 6px 0 0;
+  color: #333;
+}
+
+.link {
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #d0d0d0;
+  background: #fff;
+  color: #222;
+}
+
+.link:hover {
+  background: #f0f0f0;
+}

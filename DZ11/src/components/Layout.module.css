@@ -1,0 +1,55 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: #f3f5f7;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.link {
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  color: #222;
+  background: transparent;
+}
+
+.link:hover {
+  background: #f0f0f0;
+}
+
+.active {
+  border-color: #d0d0d0;
+  background: #f7f7f7;
+}
+
+.main {
+  padding: 24px;
+}
+
+.footer {
+  padding: 12px 20px;
+  border-top: 1px solid #e6e6e6;
+  background: #fff;
+  font-size: 13px;
+  color: #444;
+}

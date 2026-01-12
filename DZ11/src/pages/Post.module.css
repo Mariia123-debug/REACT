@@ -1,0 +1,36 @@
+.card {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 18px;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  margin: 0 0 10px;
+}
+
+.text {
+  margin: 0 0 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d0d0d0;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #efefef;
+}
