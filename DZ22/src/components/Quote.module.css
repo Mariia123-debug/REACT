@@ -1,0 +1,58 @@
+.card {
+  width: min(640px, 100%);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  padding: 18px;
+  display: grid;
+  gap: 14px;
+}
+
+.content {
+  min-height: 120px;
+}
+
+.quote {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.author {
+  margin: 10px 0 0;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.button {
+  justify-self: start;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background: white;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.muted {
+  opacity: 0.7;
+  margin: 0;
+}
+
+.errorBox {
+  border: 1px solid rgba(255, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.errorTitle {
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+
+.errorText {
+  margin: 0;
+}
