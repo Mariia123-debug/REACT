@@ -1,0 +1,96 @@
+.page {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 0; /* чтобы сверху было как у других страниц */
+}
+
+/* ВАЖНО: один общий контейнер для breadcrumbs, h1 и grid */
+.inner {
+  width: 1360px;      /* фикс под макет 1440: 1440 - 40 - 40 */
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.breadcrumbs {
+  margin-bottom: 16px;
+}
+
+.crumbLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.crumbCurrent {
+  color: inherit; /* чтобы не было серого MUI по умолчанию, если в макете иначе */
+}
+
+.headerRow {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.state {
+  padding: 24px 0;
+}
+
+/* --- GRID --- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 316px);
+  gap: 32px;
+
+  /* чтобы сетка шла от левого края контейнера, как в макете */
+  justify-content: start;
+  align-content: start;
+}
+
+/* --- CARD --- */
+.card {
+  display: block;
+  width: 316px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.imgWrap {
+  width: 316px;
+  height: 316px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f3f3f3;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.noImg {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  opacity: 0.6;
+}
+
+.body {
+  padding: 12px 4px 0;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center; 
+}

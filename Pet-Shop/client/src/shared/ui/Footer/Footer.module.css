@@ -1,0 +1,122 @@
+.footer {
+  
+  margin-top: 80px;
+  padding-left: 60px;
+  background: #ffffff;
+}
+
+/* Контейнер — совпадает с Layout */
+.container {
+  width: min(1440px, 100%);
+  margin: 0px auto;
+  box-sizing: border-box;
+  
+}
+
+/* Рабочая зона = 1360 автоматически (1440 - 80 из Layout padding) */
+.inner {
+  width: 100%;
+  min-height: 948px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  box-sizing: border-box;
+}
+
+/* ---------- Header row (как Sale) ---------- */
+
+.headerRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  
+}
+
+.headerRight {
+  min-width: 1px;
+}
+
+/* ---------- Title ---------- */
+
+.title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  color: #1a1a1a;
+  padding-left: 40px;
+}
+
+/* ---------- Info cards grid ---------- */
+
+.info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 780px 630px;
+  column-gap: 32px;
+  row-gap: 32px;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: #f1f3f6;
+  border-radius: 16px;
+  padding: 16px 18px;
+  min-height: 100px;
+  box-sizing: border-box;
+}
+
+.label {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.15;
+}
+
+/* ---------- Social icons ---------- */
+
+.icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.iconLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.icon {
+  width: 43px;
+  height: 44px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.iconInstagram {
+  background-image: url("/icons/ic-instagram.svg");
+}
+
+.iconWhatsapp {
+  background-image: url("/icons/Vector (4).svg");
+}
+
+/* ---------- Map ---------- */
+
+.map {
+  width: 100%;
+  height: 376px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #e9edf2 url("/images/map.png") center / cover no-repeat;
+}

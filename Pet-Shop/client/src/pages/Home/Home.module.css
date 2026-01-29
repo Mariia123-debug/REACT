@@ -1,0 +1,323 @@
+/* Home.module.css */
+
+/* ================= PAGE / CONTAINERS ================= */
+
+.page {
+  width: 100%;
+  background: #ffffff;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.inner {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  width: 1360px;
+  height: 600px;
+  margin: 0 auto 80px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  background-image: url("/images/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.heroContent {
+   margin-left: 80px;
+  width: 720px;  
+  max-width: none;
+  color: #ffffff;
+}
+
+.heroTitle {
+  margin: 0 0 24px;
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.heroBtn {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+
+  background: #2f65ff;
+  color: #ffffff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.heroBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* ================= SECTIONS ================= */
+
+.section {
+  width: 1360px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.sectionLink {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  color: #777;
+}
+
+/* ================= CATEGORIES ================= */
+
+.categoriesGrid {
+  margin-left: 0;
+  width: 1360px;
+ 
+  display: grid;
+  grid-template-columns: repeat(4, 316px);
+  gap: 32px;
+}
+
+.categoryLink {
+  
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* ================= DISCOUNT ================= */
+
+.discount {
+  width: 1395px;
+  height: 486px;
+  margin: 106px auto 0;
+
+  border-radius: 16px;
+  padding: 32px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  overflow: hidden;
+
+  background:
+    url("/images/content.png") left 8% bottom no-repeat,
+    linear-gradient(90deg, #2451c6 0%, #0d50ff 100%);
+  color: #ffffff;
+}
+
+.discountTitle {
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.discountContent {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 32px;
+}
+
+.discountImage {
+  flex: 1;
+}
+
+/* ---------- FORM ---------- */
+
+.discountForm {
+  width: 516px;
+  height: 296px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.input {
+  height: 52px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: transparent;
+  color: #ffffff;
+  padding: 0 14px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.discountBtn {
+  height: 54px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+
+  background: #ffffff;
+  color: #0d50ff;
+}
+
+.discountBtnSent {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.formError {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+/* ================= SALE ================= */
+
+.saleSection {
+  width: 1360px;
+  margin: 80px auto 0;
+}
+
+.saleHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.saleTitle {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.saleLink {
+  border: 1px solid #e6e6e6;
+  background: #f7f7f7;
+  border-radius: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.saleGrid {
+  width: 1360px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 316px);
+  gap: 32px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.cardImgWrap {
+  position: relative;
+  width: 316px;
+  height: 284px;
+  background: #f4f4f4;
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cardImgFallback {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: #777777;
+  font-weight: 600;
+}
+
+.cardBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #2f65ff;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+
+.cardBody {
+  padding: 12px 12px 14px;
+}
+
+.cardName {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.25;
+}
+
+.cardPriceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.cardPrice {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.cardOldPrice {
+  font-size: 12px;
+  color: #888888;
+  text-decoration: line-through;
+}
+
+/* ================= HELPERS ================= */
+
+.error {
+  color: red;
+}

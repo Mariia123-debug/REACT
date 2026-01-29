@@ -1,0 +1,203 @@
+.page {
+  padding: 24px;
+}
+
+.state {
+  padding: 24px;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  opacity: 0.75;
+}
+
+.crumbLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.crumbSep {
+  opacity: 0.6;
+}
+
+.crumbCurrent {
+  opacity: 0.85;
+}
+
+.content {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.gallery {
+  display: flex;
+  gap: 16px;
+  flex: 1 1 520px;
+  min-width: 320px;
+}
+
+.thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.thumbBtn {
+  border: 1px solid rgba(0,0,0,0.15);
+  background: #fff;
+  border-radius: 12px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.thumbActive {
+  border: 2px solid rgba(0,0,0,0.8);
+}
+
+.thumbImg {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  display: block;
+}
+
+.mainImageWrap {
+  position: relative;
+  flex: 1;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 16px;
+  padding: 16px;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 12px;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+}
+
+.mainImage {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  display: block;
+}
+
+.noImg {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(0,0,0,0.25);
+  border-radius: 12px;
+}
+
+.info {
+  flex: 1 1 360px;
+  min-width: 320px;
+}
+
+.title {
+  margin: 0 0 14px;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.priceBlock { margin-bottom: 18px; }
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.oldPrice {
+  font-size: 18px;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.controls {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0,0,0,0.18);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.qtyBtn {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.qtyValue {
+  width: 52px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.addBtn {
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 12px;
+  border: 1px solid #0b55ff;
+  background: #0b55ff;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.desc {
+  margin-top: 10px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+.addedBtn {
+  
+  background: #111;
+  color: #fff;
+  border: 1px solid rgba(0,0,0,0.3);
+}
+
+.discountPill {
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #0b55ff; /* как в макете синяя плашка */
+  color: #fff;
+}
