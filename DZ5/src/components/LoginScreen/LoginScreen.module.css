@@ -1,0 +1,140 @@
+:root {
+  --neon-green: #00ff85;
+  --hover-blue: #1181f1;
+  --black: #000000;
+}
+
+/* ===== PAGE ===== */
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--black);
+}
+
+/* ===== FRAME ===== */
+.frame {
+  width: 1707px;
+  height: 796px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 110px;
+  gap: 18px;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  position: absolute;
+  top: 28px;
+  left: 36px;
+
+  height: 22px;
+  width: auto;
+}
+
+/* ===== TITLE ===== */
+.title {
+  margin: 0;
+  color: var(--neon-green);
+
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+/* ===== SIGN IN TEXT ===== */
+.signinText {
+  margin-top: 6px;
+  text-align: center;
+
+  color: var(--neon-green);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+/* ===== CAPSULE (как в Figma) ===== */
+.providers {
+  /* вместо width/height — подстраиваемся под содержимое */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  gap: 14px;
+  padding: 36px 41px;
+
+  border-radius: 65px;
+  border: 3px solid var(--neon-green);
+  background: transparent;
+ 
+  box-sizing: border-box;
+}
+
+/* ===== BUTTON ===== */
+.iconBtn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+
+  flex: 0 0 auto;
+}
+
+.iconBtn:focus,
+.iconBtn:focus-visible {
+  outline: none;
+}
+
+/* ===== ICON BOX (ФОН ТУТ) ===== */
+.iconBox {
+  width: 97px;
+  height: 98px;
+
+  display: grid;
+  place-items: center;
+
+  background: var(--neon-green);
+  border-radius: 18px;
+
+  transform: translateY(0);
+  transition: transform 160ms ease, background-color 160ms ease;
+  will-change: transform;
+}
+
+/* hover: фон СИНИЙ + приподнять */
+.iconBtn:hover .iconBox {
+  background: var(--hover-blue);
+  transform: translateY(-8px);
+}
+
+/* ===== ICON SVG ===== */
+.iconImg {
+  width: 64px;   /* подогнано под Figma */
+  height: 64px;
+
+  object-fit: contain;
+  display: block;
+
+  /* цвет берётся из SVG */
+}
+
+/* ===== SCALE ===== */
+@media (max-width: 1760px) {
+  .frame {
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+}
+
+@media (max-width: 1560px) {
+  .frame {
+    transform: scale(0.8);
+  }
+}
